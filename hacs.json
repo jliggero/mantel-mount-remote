@@ -1,6 +1,6 @@
 {
   "name": "MantelMount Remote",
-  "content_in_root": false,
+  "content_in_root": true,
   "category": "frontend",
   "zip_release": false,
   "render_readme": true,
@@ -9,18 +9,18 @@
   "version": "1.0.6",
   "description": "A Lovelace card to control MantelMount lift systems with directional control and presets.",
   "files": [
-    "frontend/mm-remote.js",
-    "frontend/mm-remote-editor.js",
+    "mm-remote.js",
+    "mm-remote-editor.js",
+    "frontend/mantelmount-logo.png",
+    "frontend/asset2.png",
+    "frontend/asset3.png",
     "frontend/logo.svg",
     "frontend/logo-dark.svg",
-    "frontend/logo-opacity.svg",
-    "frontend/asset1.png",
-    "frontend/asset2.png",
-    "frontend/asset3.png"
+    "frontend/logo-opacity.svg"
   ],
   "keywords": ["mantelmount", "remote", "lovelace", "custom-card", "home-automation"],
   "codeowners": ["@jliggero"],
-  "authors": ["jliggero"],
+  "authors": ["@jliggero"],
   "documentation": "https://github.com/jliggero/mantel-mount-remote",
   "issue_tracker": "https://github.com/jliggero/mantel-mount-remote/issues",
   "logo": "frontend/logo.svg",
