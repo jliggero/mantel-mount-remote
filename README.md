@@ -29,10 +29,10 @@ Go to Settings > Dashboards > Resources.
 
 Add the following URLs:
 
-url: /hacsfiles/mantelmount-remote/mm-remote.js
+url: /hacsfiles/mantel-mount-remote/mm-remote.js
 type: module
 
-url: /hacsfiles/mantelmount-remote/mm-remote-editor.js
+url: /hacsfiles/mantel-mount-remote/mm-remote-editor.js
 type: module
 
 Reload resources: Go to Settings > Dashboards > Menu (⋮) > Reload Resources.
