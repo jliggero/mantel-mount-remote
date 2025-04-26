@@ -19,20 +19,25 @@ Restart Home Assistant (ha core restart).
 
 Manual Installation
 
-Download the repository and place the custom_components/mantel_mount_remote/ folder in your Home Assistant custom_components/ directory (e.g., /config/custom_components/).
-Place mm-remote.js and mm-remote-editor.js in your Home Assistant www/ folder (e.g., /config/www/).
-Add the Lovelace resources:
+Download the repository and place the custom_components/mantel_mount_remote/ folder into your Home Assistant's custom_components/ directory (e.g., /config/custom_components/).
+
+No need to move files manually — the integration automatically places mm-remote.js and mm-remote-editor.js in the correct location (/hacsfiles/mantel_mount_remote/).
+
+Add Lovelace Resources:
+
 Go to Settings > Dashboards > Resources.
-Add:- url: /local/mm-remote.js?v=1.0.0
-  type: module
-- url: /local/mm-remote-editor.js?v=1.0.0
-  type: module
 
+Add the following URLs:
 
+url: /hacsfiles/mantel_mount_remote/mm-remote.js?v=1.0.0 type: module
 
+url: /hacsfiles/mantel_mount_remote/mm-remote-editor.js?v=1.0.0 type: module
 
-Reload resources (Settings > Dashboards > Menu (⋮) > Reload Resources).
+Reload resources: Go to Settings > Dashboards > Menu (⋮) > Reload Resources.
+
 Restart Home Assistant.
+
+
 
 Configuration
 
