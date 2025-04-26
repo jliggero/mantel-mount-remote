@@ -1,0 +1,17 @@
+{
+  "domain": "mantel_mount_remote",
+  "name": "MantelMount Remote",
+  "version": "1.0.0",
+  "config_flow": true,
+  "documentation": "https://github.com/jliggero/mantel-mount-remote",
+  "dependencies": [],
+  "codeowners": ["@jliggero"],
+  "requirements": [],
+  "iot_class": "local_push",
+  "logo": "logos/logo.svg",
+  "branding": {
+    "logo": "logos/logo.svg",
+    "logo_dark": "logos/logo-dark.svg",
+    "logo_opacity": "logos/logo-opacity.svg"
+  }
+}
