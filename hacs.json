@@ -17,6 +17,8 @@
     "logo": "remote/logo.svg",
     "logo_dark": "remote/logo-dark.svg",
     "logo_opacity": "remote/logo-opacity.svg"
-  }
+  },
+  "filename": "remote/mm-remote.js"
 }
+
 
