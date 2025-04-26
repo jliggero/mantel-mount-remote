@@ -8,6 +8,10 @@
   "homeassistant": "2023.9.0",
   "country": "US",
   "description": "Control your MantelMount lift system with Home Assistant, including directional control and presets.",
+  "files": [
+    "remote/mm-remote.js",
+    "remote/mm-remote-editor.js"
+  ],
   "keywords": ["mantelmount", "remote", "lovelace"],
   "authors": ["jliggero"],
   "documentation": "https://github.com/jliggero/mantelmount-remote",
@@ -17,8 +21,8 @@
     "logo": "remote/logo.svg",
     "logo_dark": "remote/logo-dark.svg",
     "logo_opacity": "remote/logo-opacity.svg"
-  },
-  "filename": "remote/mm-remote.js"
+  }
 }
+
 
 
