@@ -11,7 +11,7 @@
   "files": [
     "mantel-mount-remote/mm-remote.js",
     "mantel-mount-remote/mm-remote-editor.js"
-  ],
+  ]
   "keywords": ["mantelmount", "lovelace"],
   "authors": ["jliggero"],
   "documentation": "https://github.com/jliggero/mantelmount-remote",
