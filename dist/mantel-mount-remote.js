@@ -57,7 +57,7 @@ class MantelMountRemoteCard extends HTMLElement {
       <ha-card>
         <div class="header">
           <div class="logo-wrapper">
-		    <img class="logo" src="/hacsfiles/mantel_mount_remote/mantelmount-logo.png" alt="MantelMount Logo" />
+		    <img class="logo" src="/hacsfiles/mantel-mount-remote/mantelmount-logo.png" alt="MantelMount Logo" />
 		  </div>
           <div class="title">MantelMount Remote</div>
         </div>
