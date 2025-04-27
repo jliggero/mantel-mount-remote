@@ -6,24 +6,24 @@
   "hacs": "1.6.0",
   "homeassistant": "2023.9.0",
   "description": "Control your MantelMount lift system with Home Assistant, including directional control and presets.",
-  "resources": [
-    {
-      "url": "hacsfiles/mantel-mount-remote/mantel-mount-remote.js",
-      "type": "module"
-    },
-    {
-      "url": "hacsfiles/mantel-mount-remote/mantel-mount-remote-editor.js",
-      "type": "module"
-    }
+  "filename": "dist/mantel-mount-remote/mantel-mount-remote.js",
+  "additional_files": [
+    "dist/mantel-mount-remote/mantel-mount-remote-editor.js",
+    "dist/mantel-mount-remote/logo.svg",
+    "dist/mantel-mount-remote/logo-dark.svg",
+    "dist/mantel-mount-remote/logo-opacity.svg",
+    "dist/mantel-mount-remote/mantelmount-logo.png",
+    "dist/mantel-mount-remote/mantelmount-logo-dark.png",
+    "dist/mantel-mount-remote/mantelmount-logo-opacity.png"
   ],
   "keywords": ["mantelmount", "remote", "lovelace"],
   "authors": ["jliggero"],
   "documentation": "https://github.com/jliggero/mantel-mount-remote",
   "iot_class": "local_push",
-  "logo": "remote/logo.svg",
+  "logo": "brands/mantel_mount_remote/logo.svg",
   "branding": {
-    "logo": "remote/logo.svg",
-    "logo_dark": "remote/logo-dark.svg",
-    "logo_opacity": "remote/logo-opacity.svg"
+    "logo": "brands/mantel_mount_remote/logo.svg",
+    "logo_dark": "brands/mantel_mount_remote/logo-dark.svg",
+    "logo_opacity": "brands/mantel_mount_remote/logo-opacity.svg"
   }
 }
