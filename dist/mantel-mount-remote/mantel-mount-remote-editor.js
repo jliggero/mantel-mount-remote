@@ -2,7 +2,7 @@ import { html } from "https://unpkg.com/lit-html?module";
 
 class MantelMountRemoteEditor extends HTMLElement {
   static getConfigElement() {
-    return document.createElement('mm-remote-editor');
+    return document.createElement('mantel-mount-remote-editor');
   }
 
   static getStubConfig() {
@@ -71,7 +71,7 @@ class MantelMountRemoteEditor extends HTMLElement {
       <ha-card>
         <div class="header">
           <div class="logo-wrapper">
-		    <img class="logo" src="/hacsfiles/mantel-mount-remote/remote/mantelmount-logo.png" alt="MantelMount Logo" />
+		    <img class="logo" src="/hacsfiles/mantel-mount-remote/mantelmount-logo.png" alt="MantelMount Logo" />
 		  </div>
           <div class="title">MantelMount Remote Editor</div>
         </div>
@@ -261,6 +261,6 @@ class MantelMountRemoteEditor extends HTMLElement {
   }
 }
 
-if (!customElements.get('mm-remote-editor')) {
-  customElements.define('mm-remote-editor', MantelMountRemoteEditor);
+if (!customElements.get('mantel-mount-remote-editor')) {
+  customElements.define('mantel-mount-remote-editor', MantelMountRemoteEditor);
 }
