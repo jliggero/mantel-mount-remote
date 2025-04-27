@@ -2,7 +2,7 @@ import { html } from "https://unpkg.com/lit-html?module";
 
 class MantelMountRemoteEditor extends HTMLElement {
   static getConfigElement() {
-    return document.createElement('mm-remote-editor');
+    return document.createElement('mantel-mount-remote-editor');
   }
 
   static getStubConfig() {
@@ -261,6 +261,6 @@ class MantelMountRemoteEditor extends HTMLElement {
   }
 }
 
-if (!customElements.get('mm-remote-editor')) {
-  customElements.define('mm-remote-editor', MantelMountRemoteEditor);
+if (!customElements.get('mantel-mount-remote-editor')) {
+  customElements.define('mantel-mount-remote-editor', MantelMountRemoteEditor);
 }
