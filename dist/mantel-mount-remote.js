@@ -2,7 +2,7 @@ import { html } from "https://unpkg.com/lit-html?module";
 
 class MantelMountRemoteCard extends HTMLElement {
   static getConfigElement() {
-    return document.createElement('mm-remote-editor');
+    return document.createElement('mantel-mount-remote-editor');
   }
 
   static getStubConfig() {
@@ -163,7 +163,7 @@ class MantelMountRemoteCard extends HTMLElement {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         /* This part scales it down in the card picker/editor view */
-        hui-card-preview mm-remote ha-card {
+        hui-card-preview mantel-mount-remote ha-card {
 		  transform: scale(0.85);
 		  transform-origin: top left;
 		  margin: 0;
@@ -171,13 +171,13 @@ class MantelMountRemoteCard extends HTMLElement {
 		  max-width: unset;
 		}
 		
-		hui-card-preview mm-remote .btn {
+		hui-card-preview mantel-mount-remote .btn {
 	      width: 80px;
 		  font-size: 14px;
 		  padding: 6px 0;
 		}
 		
-		hui-card-preview mm-remote .grid {
+		hui-card-preview mantel-mount-remote .grid {
 		  grid-template-columns: repeat(3, 80px);
 		  gap: 8px;
 		}
@@ -275,15 +275,15 @@ class MantelMountRemoteCard extends HTMLElement {
   getCardSize() { return 4; }
 }
 
-if (!customElements.get('mm-remote')) {
-  customElements.define('mm-remote', MantelMountRemoteCard);
+if (!customElements.get('mantel-mount-remote')) {
+  customElements.define('mantel-mount-remote', MantelMountRemoteCard);
 }
 window.customCards = window.customCards || [];
 window.customCards.push({
-  type: 'mm-remote',
+  type: 'mantel-mount-remote',
   name: 'MantelMount Remote',
   description: '12-button MantelMount controller',
   preview: true,
 });
 window.customCardEditors = window.customCardEditors || {};
-window.customCardEditors['mm-remote'] = 'mm-remote-editor';
+window.customCardEditors['mantel-mount-remote'] = 'mantel-mount-remote-editor';
