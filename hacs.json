@@ -1,32 +1,26 @@
 {
   "name": "MantelMount Remote",
-  "content_in_root": true,
-  "category": "frontend",
+  "content_in_root": false,
   "zip_release": false,
+  "domains": ["switch"],
   "render_readme": true,
-  "hacs": "1.33.0",
-  "homeassistant": "2025.4.0",
-  "version": "1.0.6",
-  "description": "A Lovelace card to control MantelMount lift systems with directional control and presets.",
+  "hacs": "1.6.0",
+  "homeassistant": "2023.9.0",
+  "country": "US",
+  "description": "Control your MantelMount lift system with Home Assistant, including directional control and presets.",
   "files": [
     "mm-remote.js",
-    "mm-remote-editor.js",
-    "frontend/mantelmount-logo.png",
-    "frontend/mantelmount-logo_dark.png",
-    "frontend/mantelmount-logo_opacity.png",
-    "frontend/logo.svg",
-    "frontend/logo-dark.svg",
-    "frontend/logo-opacity.svg"
+    "mm-remote-editor.js"
   ],
-  "keywords": ["mantelmount", "remote", "lovelace", "custom-card", "home-automation"],
-  "codeowners": ["@jliggero"],
-  "authors": ["@jliggero"],
+  "frontend": true,
+  "keywords": ["mantelmount", "remote", "lovelace"],
+  "authors": ["jliggero"],
   "documentation": "https://github.com/jliggero/mantel-mount-remote",
-  "issue_tracker": "https://github.com/jliggero/mantel-mount-remote/issues",
-  "logo": "frontend/logo.svg",
+  "iot_class": "local_push",
+  "logo": "remote/logo.svg",
   "branding": {
-    "logo": "frontend/logo.svg",
-    "logo_dark": "frontend/logo-dark.svg",
-    "logo_opacity": "frontend/logo-opacity.svg"
+    "logo": "remote/logo.svg",
+    "logo_dark": "remote/logo-dark.svg",
+    "logo_opacity": "remote/logo-opacity.svg"
   }
 }
