@@ -1,24 +1,18 @@
 {
-  "name": "MantelMount Remote",
+  "name": "MantelMount Remote Dashboard",
   "content_in_root": true,
   "zip_release": false,
   "render_readme": true,
   "hacs": "1.30.0",
   "homeassistant": "2024.4.0",
   "category": "dashboard",
-  "description": "Control your MantelMount lift system with Home Assistant, including directional control and presets.",
+  "description": "Lovelace dashboard card to control your MantelMount lift system.",
   "filename": "mantel-mount-remote.js",
   "frontend_module": "mantel-mount-remote",
   "keywords": ["mantelmount", "remote", "lovelace"],
   "authors": ["jliggero"],
-  "documentation": "https://github.com/jliggero/mantel-mount-remote",
-  "iot_class": "local_push",
-  "logo": "brands/mantel_mount_remote/logo.svg",
-  "branding": {
-    "logo": "brands/mantel_mount_remote/logo.svg",
-    "logo_dark": "brands/mantel_mount_remote/logo-dark.svg",
-    "logo_opacity": "brands/mantel_mount_remote/logo-opacity.svg"
-  }
+  "documentation": "https://github.com/YOUR_USERNAME/mantel-mount-remote-dashboard"
 }
+
 
 
