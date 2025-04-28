@@ -6,6 +6,7 @@ from homeassistant.components.switch import SwitchEntity
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
+from . import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -45,8 +46,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
         _LOGGER.error("async_add_entities is None, expected a callback function")
         raise ValueError("async_add_entities is required for platform setup")
 
-    ip = entry.data.get(IP_KEY)
-    port = entry.data.get(PORT_KEY)
+    ip = hass.data[DOMAIN][entry.entry_id]["ip_address"]
+    port = hass.data[DOMAIN][entry.entry_id]["port"]
 
     if not ip or not port:
         raise ValueError("IP address and port are required in the configuration.")
