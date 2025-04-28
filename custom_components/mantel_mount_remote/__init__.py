@@ -1,11 +1,10 @@
-"""MantelMount Remote integration."""
-DOMAIN = "mantel_mount_remote"
+import logging
+from homeassistant.components.frontend import add_extra_js_url
+
+_LOGGER = logging.getLogger(__name__)
 
 async def async_setup(hass, config):
     """Set up the MantelMount Remote integration."""
-    return True
-
-async def async_setup_entry(hass, config_entry):
-    """Set up MantelMount Remote from a config entry."""
-    await hass.config_entries.async_forward_entry_setups(config_entry, ["switch"])
+    add_extra_js_url(hass, "/local/community/mantel-mount-remote/mantel-mount-remote.js")
+    _LOGGER.info("MantelMount Remote resources registered")
     return True
