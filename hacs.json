@@ -5,7 +5,7 @@
   "render_readme": true,
   "hacs": "1.30.0",
   "homeassistant": "2024.4.0",
-  "category": "plugin",
+  "category": "dashboard",
   "description": "Control your MantelMount lift system with Home Assistant, including directional control and presets.",
   "filename": "mantel-mount-remote.js",
   "frontend_module": "mantel-mount-remote",
