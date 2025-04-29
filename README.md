@@ -1,25 +1,20 @@
-# MantelMount Remote Dashboard Card
+# MantelMount Remote Dashboard
 
-This project provides a Lovelace dashboard card to control MantelMount lift systems inside Home Assistant.  
-Requires the [MantelMount Remote Integration](https://github.com/jliggero/mantel-mount-remote-integration) to function.
-
----
-
-## Features
-- **Directional controls**: Up, down, left, right, and stop.
-- **Home position** button.
-- **Preset and Save** position buttons.
-- Clean and responsive layout for Home Assistant dashboards.
-
----
+A Lovelace card for controlling your MantelMount lift system in Home Assistant.
 
 ## Installation
-1. Add this repository to HACS:
-   - Go to HACS → Frontend → Three Dots Menu → **Custom Repositories**.
-   - URL: `https://github.com/jliggero/mantel-mount-remote-dashboard`
-   - Category: **Dashboard**
-2. Install the **MantelMount Remote Dashboard**.
-3. Add `/hacsfiles/mantel-mount-remote-dashboard/mantel-mount-remote.js` as a Lovelace **resource**:
-   ```yaml
-   - url: /hacsfiles/mantel-mount-remote-dashboard/mantel-mount-remote.js
-     type: module
+
+1. In HACS, go to **Frontend** and add `https://github.com/jliggero/mantel-mount-remote-dashboard` as a custom repository (type: Frontend).
+2. Install the `MantelMount Remote Card`.
+3. Restart Home Assistant (`ha core restart`).
+4. In Lovelace, add a new card and select `MantelMount Remote`.
+5. Configure the card to use entities from the `mantel_mount_remote` integration (e.g., `switch.mantel_mount_up`).
+
+## Prerequisites
+
+- Install the [MantelMount Remote Integration](https://github.com/jliggero/mantel-mount-remote-integration) for switch entities.
+
+## Notes
+
+- The card logo is embedded, so no additional files are needed.
+- Requires Home Assistant 2023.9.0 or later.
